@@ -3,7 +3,7 @@ import { ServerResponse } from "../../const/types/shared.types";
 import { baseQueryWithReauth } from "./baseApiConfig";
 import { io } from 'socket.io-client';
 
-const socket = io("localhost:4000");
+const socket = io("https://property-project-backend.onrender.com");
 
 export const notificationApi = createApi({
     reducerPath: 'notificationApi',
